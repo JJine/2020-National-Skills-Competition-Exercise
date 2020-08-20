@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, li, ol { list-style: none;}
+a { text-decoration: none !important; }
+#wrap {
+    position: relative;
+    z-index: 1;
+}
+
+/* 헤더 영역 */
+header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    /* background: #fff; */
+    color: #848484;
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+    z-index: 11;
+} 
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 300px;
+}
+
+header li {
+    height: 100%;
+    position: relative;
+}
+
+header li > a {
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    transition: 0.2s;
+    font-weight: bold;
+
+}
+
+.nav .dropDown {
+    margin-top: 38px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    background: #fff;
+    transition: 0.5s opacity, 0.5s top, 0.5s visibility;
+    opacity: 0;
+    top: calc(100% - 40px);
+    visibility: hidden;
+}
+
+.nav > li:hover .dropDown{
+	transition: 0.5s opacity, 0.5s top;
+	top: calc(100%);
+	opacity: 1;
+	visibility: visible;
+}
+
+.nav .dropDown a{
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.25s;
+	padding: 10px 0;
+    text-align: center;
+    color : #222;
+}
+
+.nav .dropDown a:hover{
+	background: #f2af3a;
+	color: white;
+}
+
+a:hover {
+    color: #ff9283 !important; 
+}
+
+header i{
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 비주얼 영역 */
+#visual {
+    height: 870px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: -100px;
+    z-index: 10;
+}
+
+.visual-text {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+}
+
+.visual-sub {
+    font-size: 20px;
+}
+
+.visual-main {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* 비주얼 - 슬라이드 영역 */
+.slide{height:870px; width: 100%; overflow: hidden;}
+.slide ul{width: calc(100% * 3); display:flex;animation:slide 10s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
+.slide li{width: calc(100% / 3); height:870px;}
+.slide li:nth-child(1){ background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../img/45.jpg"); background-position: left bottom; }
+.slide li:nth-child(2){ background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../img/48.jpg");}
+.slide li:nth-child(3) {background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/37.jpg"); background-position: left bottom;}
+
+@keyframes slide {
+    0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+    10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+    25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+    35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+    50% {margin-left:-200%;}
+    60% {margin-left:-200%;}
+    75% {margin-left:-300%;}
+    85% {margin-left:-300%;}
+    100% {margin-left:0;}
+  }
+
+  .slide input{display:none;}
+  .slide .bullet{position:absolute;bottom:20px;left:0;right:0;text-align:center;z-index:13;}
+  .slide .bullet label{width:15px;height:15px;margin-left: 20px; border-radius:10px;border:2px solid #666;display:inline-block;background:#fff;font-size:0;transition:0.5s;cursor:pointer;}
+  
+  /* 슬라이드 조작 */
+   #pos1:checked ~ ul{margin-left:0;}
+   #pos2:checked ~ ul{margin-left:-100%;}
+   #pos3:checked ~ ul{margin-left:-200%;}
+   
+
+   /* bullet 조작 */
+   #pos1:checked ~ .bullet label:nth-child(1),
+   #pos2:checked ~ .bullet label:nth-child(2),
+   #pos3:checked ~ .bullet label:nth-child(3),
+   #pos4:checked ~ .bullet label:nth-child(4){background:#666;}
+/* 축제소개 영역 */
+#intro-fes {
+    width: 100%;
+    height: 700px;
+}
+
+/* 알려드립니다 영역  */
+#attention {
+    width: 100%;
+    height: 300px;
+    background: #f4f5f7;
+    z-index: 2;
+    position: relative;
+}
+
+#attention::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    /* top: 100%; */
+    transform-origin: left top;
+    transform: skewY(-5deg);
+    background: inherit;
+}

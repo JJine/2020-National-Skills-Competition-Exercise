@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slide3.css">
+</head>
+<body>
+    <!-- visual -->
+    <div id="visual">
+        <input type="radio" name="slide_status" id="slide_stop" class="slide_btn" hidden >
+        <input type="radio" name="slide_status" id="slide_play" class="slide_btn" hidden checked>
+
+        <input type="radio" name="slide_btn" id="slide_btn1" class="slide_btn" hidden>
+        <input type="radio" name="slide_btn" id="slide_btn2" class="slide_btn" hidden>
+        <input type="radio" name="slide_btn" id="slide_btn3" class="slide_btn" hidden>
+
+        <input type="radio" name="slide_btn" id="slide_btn1-copy" class="slide_btn" hidden>
+        <input type="radio" name="slide_btn" id="slide_btn2-copy" class="slide_btn" hidden>
+        <input type="radio" name="slide_btn" id="slide_btn3-copy" class="slide_btn" hidden>
+
+        <div id="slide">
+            <img src="resource/37.jpg" alt="slide_img" class="slide_img">
+            <img src="resource/45.jpg" alt="slide_img" class="slide_img">
+            <img src="resource/48.jpg" alt="slide_img" class="slide_img">
+            <img src="resource/37.jpg" alt="slide_img" class="slide_img">
+        </div>
+
+        <div id="slide_word">
+
+            <div class="slide_word_box" id="slide1_word_box">
+                <div id="slide1_word_wrap">
+                    <h5>24회 전주한지문화축제</h5>
+                    <h2><span>전주,</span> 한지로 꽃피다</h2>
+                    <p> 온라인으로 사랑하는 친구, 연인, 가족과 함께<br>
+                        꿈 같은 축제를 경험해보세요.
+                    </p>
+                    <button>더보기</button>
+                </div>
+            </div>
+
+            <div class="slide_word_box" id="slide2_word_box">
+                <div id="slide2_word_wrap">
+                    <h2>천 년 한지 이야기로 여러분을 초대합니다.</h2>
+                    <p>개최기간 : 2020년 9월 18일(금) ~ 9월 20일(일)</p>
+                    <button><span><i class="fas fa-plus"></i></span></button>
+                </div>
+            </div>
+
+            <div class="slide_word_box" id="slide3_word_box">
+                <div id="slide3_word_wrap">
+                    <p>전라죽도 전주에서 열리는</p>
+                    <h2>전주한지문화축제</h2>
+                    <h5>Jeonju Hanji Culture Festival 2020</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="slide_btn_box">
+            <div class="slide_btn_wrap">
+                <label for="slide_btn1" id="slide1_btn_label" class="slide_btn_label"></label>
+                <label for="slide_btn1-copy" id="slide1_btn_label-copy" class="slide_btn_label-copy"></label>
+            </div>
+            <div class="slide_btn_wrap">
+                <label for="slide_btn2" id="slide2_btn_label" class="slide_btn_label"></label>
+                <label for="slide_btn2-copy" id="slide2_btn_label-copy" class="slide_btn_label-copy"></label>
+            </div>
+            <div class="slide_btn_wrap">
+                <label for="slide_btn3" id="slide3_btn_label" class="slide_btn_label"></label>
+                <label for="slide_btn3-copy" id="slide3_btn_label-copy" class="slide_btn_label-copy"></label>
+            </div>
+        </div>
+
+        <div id="slide_control">
+            <label for="slide_stop" id="slide_stop_btn" class="slide_control_btn"><i class="fas fa-stop"></i></label>
+            <label for="slide_play" id="slide_play_btn" class="slide_control_btn"><i class="fas fa-play"></i></label>
+        </div>
+    </div>
+</body>
+</html>
