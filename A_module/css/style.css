@@ -1742,37 +1742,54 @@ header i {
 
 .intro-fes-content pre {
   margin-top: 50px;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 30px;
 }
+
+pre {
+  margin-bottom: 0 !important;
+}
+
 /* 알려드립니다 영역  */
 #attention {
   width: 100%;
-  height: 800px;
+  height: 700px;
+}
+
+.attention-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+}
+
+#attention  img {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blue {
+  background: rgb(131, 147, 172);
+  color: #fff;
+  line-height: 30px;
+} 
+
+.green {
+  background: rgb(206, 176, 176);
+}
+
+#attention .item {
+  padding: 10px;
+}
+
+/* 공예대전 갤러리 */
+#crafts-com{
+  width: 100%;
+  height: 1000px;
   background: #f4f5f7;
   z-index: 2;
   position: relative;
-}
 
-
-#attention::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  /* top: 100%; */
-  transform-origin: left top;
-  transform: skewY(-2deg);
-  background: inherit;
-}
-
-#crafts-com {
-  width: 100%;
-  height: 800px;
-  z-index: 4;
-  background: #fff;
-  position: relative;
 }
 
 #crafts-com::before {
@@ -1780,11 +1797,32 @@ header i {
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -1;
+  /* top: 100%; */
+  transform-origin: left top;
+  transform: skewY(-3deg);
+  background: inherit;
+}
+
+#sponsor {
+  width: 100%;
+  height: 800px;
+  z-index: 4;
+  background: #fff;
+  position: relative;
+}
+
+#sponsor::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
   z-index: 3;
   /* top: 100%; */
   transform-origin: left top;
-  transform: skewY(-2deg);
+  transform: skewY(-3deg);
   background: inherit;
+ 
 }
 
 
