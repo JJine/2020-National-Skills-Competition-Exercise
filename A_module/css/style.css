@@ -90,12 +90,12 @@ header li>a {
 }
 
 .nav .dropDown a:hover {
-  background: #e5e3ff;
+  background: #151A30;
   color: white;
 }
 
 a:hover {
-  color: #f6604c !important;
+  color: #AC9A75 !important;
 }
 
 header i {
@@ -1684,7 +1684,7 @@ header i {
 }
 
 .content-sub {
-  color: #ff897a;
+  color: #AC9A75;
   font-size: 18px;
   font-weight: 500;
 }
@@ -1725,7 +1725,7 @@ header i {
 }
 
 .intro-fes-go a:hover {
-  border: 1px solid #ff897a;
+  border: 1px solid #A99B79;
   transition: 0.3s;
 }
 
@@ -1755,16 +1755,17 @@ pre:hover {
 }
 
 .readMore {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 140px;
-  border: 1px solid #ff897a;
+  border: 1px solid #A99B79;
   padding: 10px 20px;
   width: 30%;
   cursor: pointer;
+  color: #A99B79;
 }
 
 .readMore:hover {
-  background: #ff897a;
+  background: #A99B79;
   color: #fff;
   transition: 0.3s;
 }
@@ -1772,7 +1773,7 @@ pre:hover {
 /* 알려드립니다 영역  */
 #attention {
   width: 100%;
-  height: 500px;
+  height: 260px;
 }
 
 .attention-content {
@@ -1804,49 +1805,51 @@ pre:hover {
 /* 공예대전 갤러리 */
 #crafts-com {
   width: 100%;
-  height: 1000px;
-  background: #f4f5f7;
+  height: 960px;
   z-index: 2;
   position: relative;
 }
 
-#crafts-com::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-  /* top: 100%; */
-  transform-origin: left top;
-  transform: skewY(-3deg);
-  background: inherit;
-}
-
-#crafts-com #content-title {
-  padding-top: 50px;
-}
-
-#crafts-com img {
-  width: 300px;
-  height: 300px;
-}
-
 .crafts-com-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height: 1000px;
 }
 
 .crafts-com-content .item {
-  margin-top: 50px;
+  height: 700px;
+  width: 100%;
 }
 
+.crafts-com-content .item  .img{
+  height: 700px;
+  width: 100%;
+}
 
+.crafts-com-content .item .img img {
+  width: 100%;
+  height: 100%;
+}
+.gray { background: #F7F7F7;}
+
+.crafts-com-content .item-container{
+  background: ##F7F7F7;
+  width: 100%;
+  height: 100%;
+  padding: 150px 250px;
+}
+
+.crafts-com-content .item-box{
+  width: 450px;
+  height: 400px;
+  background: #fff;
+}
+/* 
 #sponsor {
   width: 100%;
   height: 800px;
   z-index: 4;
-  background: #fff;
+  background: #f4f5f7;
   position: relative;
 }
 
@@ -1857,13 +1860,13 @@ pre:hover {
   position: absolute;
   z-index: 3;
   /* top: 100%; */
-  transform-origin: left top;
+  /* transform-origin: left top;
   transform: skewY(-3deg);
   background: inherit;
-}
+} */ 
 
 /* 푸터 영역 */
 footer {
-  background: #646464;
-  height: 120px;
+  background: #262830 ;
+  height: 300px;
 }
