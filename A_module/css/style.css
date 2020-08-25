@@ -1674,12 +1674,8 @@ header i {
   animation-delay: -8s;
 }
 
-#contents {
-  margin-top: 100px;
-}
 
 #content-title {
-  text-align: center;
   line-height: 30px;
 }
 
@@ -1694,11 +1690,6 @@ header i {
   margin-bottom: 30px;
 }
 
-/* hr {
-  border-width: 3px !important;
-  width: 5%;
-  display: inline-block;
-} */
 
 /* 축제소개 영역 */
 
@@ -1709,161 +1700,31 @@ header i {
   z-index: 3;
 }
 
-.intro-fes-go {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro-fes-go a {
-  color: rgb(129, 129, 129);
-  padding: 10px 20px;
-  border: 1px solid rgb(129, 129, 129);
-  border-radius: 2px;
-  margin-left: 35px;
-}
-
-.intro-fes-go a:hover {
-  border: 1px solid #A99B79;
-  transition: 0.3s;
-}
-
-.intro-fes-content {
-  display: flex;
-  margin-top: 100px;
-}
-
-.intro-fes-content img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-}
-
-.intro-fes-content pre {
-  margin-top: 50px;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-pre {
-  margin-bottom: 0 !important;
-}
-
-pre:hover {
-  cursor: pointer;
-}
-
-.readMore {
-  margin-top: 10px;
-  margin-left: 140px;
-  border: 1px solid #A99B79;
-  padding: 10px 20px;
-  width: 30%;
-  cursor: pointer;
-  color: #A99B79;
-}
-
-.readMore:hover {
-  background: #A99B79;
-  color: #fff;
-  transition: 0.3s;
-}
-
-/* 알려드립니다 영역  */
-#attention {
-  width: 100%;
-  height: 260px;
-}
-
-.attention-content {
-  display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
-}
-
-#attention img {
-  background: #000;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.blue {
-  background: rgb(152, 172, 204);
-  color: #fff;
-  line-height: 30px;
-}
-
-.green {
-  background: rgb(255, 178, 178);
-}
-
-#attention .item {
-  padding: 10px;
-}
-
-/* 공예대전 갤러리 */
-#crafts-com {
-  width: 100%;
-  height: 960px;
-  z-index: 2;
+#intro-fes #content-title {
   position: relative;
-}
-
-.crafts-com-content {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  height: 1000px;
-}
-
-.crafts-com-content .item {
-  height: 700px;
-  width: 100%;
-}
-
-.crafts-com-content .item  .img{
-  height: 700px;
-  width: 100%;
-}
-
-.crafts-com-content .item .img img {
-  width: 100%;
-  height: 100%;
-}
-.gray { background: #F7F7F7;}
-
-.crafts-com-content .item-container{
-  background: ##F7F7F7;
-  width: 100%;
-  height: 100%;
-  padding: 150px 250px;
-}
-
-.crafts-com-content .item-box{
-  width: 450px;
-  height: 400px;
-  background: #fff;
-}
-/* 
-#sponsor {
-  width: 100%;
-  height: 800px;
-  z-index: 4;
-  background: #f4f5f7;
-  position: relative;
-}
-
-#sponsor::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
   z-index: 3;
-  /* top: 100%; */
-  /* transform-origin: left top;
-  transform: skewY(-3deg);
-  background: inherit;
-} */ 
+  padding-top: 150px;
+} 
+
+#intro-fes .content-box {
+  background: #f7f7f7;
+  height: 900px;
+  width: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#intro-fes .content-box2 {
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 20%;
+  background: #fff;
+  padding: 30px 60px;
+  width: 700px;
+}
 
 /* 푸터 영역 */
 footer {
