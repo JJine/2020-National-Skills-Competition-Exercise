@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전주한지문화축제</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <!--  전체 영역 -->
+    <div id="wrap">
+        <!-- 헤더 영역-->
+        <header>
+            <!-- <div id="logo">
+                <img src="" alt="logo" title="logo">
+            </div> -->
+            <ul class="nav">
+                <li>
+                    <a href="#">전주한지문화축제</a>
+                    <ul class="dropDown">
+                        <li><a href="#">개요/연혁</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">한지상품판매관</a>
+                    <ul class="dropDown">
+                        <li><a href="#">한지업체</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">전주한지문화축제</a>
+                </li>
+                <li>
+                    <a href="#">한지공예대전</a>
+                    <ul class="dropDown">
+                        <li><a href="#">출품신청</a></li>
+                        <li><a href="#">참가작품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">축제공지사항</a>
+                    <ul class="dropDown">
+                        <li><a href="#">알려드립니다</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="etc nav">
+                <i class="fa fa-search"></i>
+                <li>로그인</li>
+                <li>회원가입</li>
+            </ul>
+        </header>
+        <!-- 비주얼 영역 -->
+
+        <div id="visual">
+            <input type="radio" name="slide_status" id="slide_stop" class="slide_btn" hidden>
+            <input type="radio" name="slide_status" id="slide_play" class="slide_btn" hidden checked>
+
+            <input type="radio" name="slide_btn" id="slide_btn1" class="slide_btn" hidden>
+            <input type="radio" name="slide_btn" id="slide_btn2" class="slide_btn" hidden>
+            <input type="radio" name="slide_btn" id="slide_btn3" class="slide_btn" hidden>
+
+            <input type="radio" name="slide_btn" id="slide_btn1-copy" class="slide_btn" hidden>
+            <input type="radio" name="slide_btn" id="slide_btn2-copy" class="slide_btn" hidden>
+            <input type="radio" name="slide_btn" id="slide_btn3-copy" class="slide_btn" hidden>
+
+            <div id="slide">
+                <img src="./img/slide1.jpg" alt="slide_img" class="slide_img">
+                <img src="./img/slide2.jpg" alt="slide_img" class="slide_img">
+                <img src="./img/slide3.jpg" alt="slide_img" class="slide_img">
+                <img src="./img/slide1.jpg" alt="slide_img" class="slide_img">
+            </div>
+
+            <div id="slide_word">
+
+                <div class="slide_word_box" id="slide1_word_box">
+                    <div id="slide1_word_wrap">
+                        <p class="sub">정성과 실력이 더해져 품격있는</p>
+                        <p class="main">전주한지문화축제</p>
+                    </div>
+                </div>
+
+                <div class="slide_word_box" id="slide2_word_box">
+                    <div id="slide2_word_wrap">
+                        <p class="sub">한옥을<br> 닮다 한지를 담다</p>
+                        <p class="main">전주한지문화축제</p>
+                    </div>
+                </div>
+
+                <div class="slide_word_box" id="slide3_word_box">
+                    <div id="slide3_word_wrap">
+                        <p class="sub">정성과 실력이 더해져 품격있는</p>
+                        <p class="main">전주한지문화축제</p>
+                    </div>
+                </div>
+                <div id="slide_btn_box">
+                    <div class="slide_btn_wrap">
+                        <label for="slide_btn1" id="slide1_btn_label" class="slide_btn_label"></label>
+                        <label for="slide_btn1-copy" id="slide1_btn_label-copy" class="slide_btn_label-copy"></label>
+                    </div>
+                    <div class="slide_btn_wrap">
+                        <label for="slide_btn2" id="slide2_btn_label" class="slide_btn_label"></label>
+                        <label for="slide_btn2-copy" id="slide2_btn_label-copy" class="slide_btn_label-copy"></label>
+                    </div>
+                    <div class="slide_btn_wrap">
+                        <label for="slide_btn3" id="slide3_btn_label" class="slide_btn_label"></label>
+                        <label for="slide_btn3-copy" id="slide3_btn_label-copy" class="slide_btn_label-copy"></label>
+                    </div>
+                </div>
+                <div id="slide_control">
+                    <label for="slide_stop" id="slide_stop_btn" class="slide_control_btn"><i
+                            class="fa fa-stop"></i></label>
+                    <label for="slide_play" id="slide_play_btn" class="slide_control_btn"><i
+                            class="fa fa-play"></i></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 콘텐츠 영역 -->
+        <div id="contents">
+            <!-- 축제소개 영역  -->
+            <div id="intro-fes">
+                <div id="content-title" class="container">
+                    <p class="content-sub">축제개요</p>
+                    <p class="content-main">좋은 장소로 뵙는 <b>문화축제</b></p>
+                    <!-- <hr> -->
+                </div>
+                <div class="content-box">
+                    <div class="row">
+                        <span>&lt;</span>
+                    </div>
+                </div>
+                <div class="content-box2">
+                    <p>
+                        <br>개요제 24회 전주한지문화축제
+                        <br>개최기간 2020년 9월 18일(금) - 9월 20일(일)
+                        <br>개최장소 한국전통문화전당
+                        <br>주최 전주시
+                        <br>주관 전주한지문화축제 조직위원회 <br>전주한지문화축제
+
+                    </p>
+                </div>
+                <img src="./img/29.jpg" alt="">
+
+            </div>
+            <!-- 알려드립니다 영역 -->
+            <div id="attention">
+                <!-- <div id="content-title">
+                    <p class="content-sub">알려드립니다</p>
+                    <p class="content-main">365일 재미를 보장하는 <b>문화축제</b></p>
+                 
+                </div> -->
+                <div class="attention-content">
+
+
+                </div>
+            </div>
+            <!-- 공예대전 갤러리 영역-->
+            <div id="crafts-com">
+
+            </div>
+            <!-- 후원사 영역 -->
+            <div id="sponsor">
+
+            </div>
+        </div>
+        <!-- 푸터 영역-->
+        <footer>
+            <div id="logo2">
+
+            </div>
+            <nav>
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </nav>
+            <div id="sns-icon">
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
